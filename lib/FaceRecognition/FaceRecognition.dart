@@ -19,7 +19,7 @@ Map<String, dynamic> readJsonFile(String path) {
   return json.decode(readFile(path));
 }
 
-class FaceRecoginition {
+class FaceRecognition {
   // name of the model file
   final _modelFile = 'my_facenet.tflite';
 
@@ -29,7 +29,7 @@ class FaceRecoginition {
   var _labels;
   var _svc;
 
-  FaceRecoginition() {
+  FaceRecognition() {
     // Load model when the classifier is initialized.
     init();
   }
